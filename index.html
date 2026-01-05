@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Shashwat Ojha - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -375,6 +375,34 @@
             padding: 100px 0;
         }
 
+        .company-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .company-header {
+            text-align: center;
+        }
+
+        .company-name {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .role {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+        }
+
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -506,7 +534,7 @@
 
         .project-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
             margin-bottom: 25px;
         }
@@ -541,7 +569,7 @@
             height: 40px;
             background: rgba(255,255,255,0.05);
             border-radius: 12px;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
@@ -732,7 +760,7 @@
 
     <div class="container">
         <nav>
-            <div class="logo">YN.</div>
+            <div class="logo">SO.</div>
             <ul class="nav-links">
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
@@ -745,8 +773,8 @@
                 <span class="status-dot"></span>
                 Available for new projects
             </div>
-            <h1>Creative Developer<br>& Designer</h1>
-            <p class="subtitle">Crafting digital experiences that matter</p>
+            <h1>Shashwat Ojha</h1>
+            <p class="subtitle">Backend Developer | Building Scalable Systems</p>
             <div class="cta-buttons">
                 <a href="#" class="btn btn-primary" onclick="return false;">View My Work</a>
                 <a href="#" class="btn btn-secondary" onclick="return false;">Get In Touch</a>
@@ -756,52 +784,59 @@
 
         <section class="projects-section" id="work">
             <div class="section-header">
-                <h2 class="section-title">Featured Work</h2>
-                <a href="#" class="view-all" onclick="return false;">View All</a>
+                <h2 class="section-title">Work Experience</h2>
             </div>
+            
+            <div class="company-section">
+                <div class="company-header">
+                    <h3 class="company-name">Accenture</h3>
+                    <p class="role">Backend Developer</p>
+                </div>
+            </div>
+
             <div class="projects-grid" id="projectsGrid">
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🚀</div>
-                        <div class="project-link">↗</div>
+                        <div class="project-icon">🔒</div>
                     </div>
-                    <h3>Quantum Dashboard</h3>
-                    <p>A next-generation analytics platform with real-time data visualization and AI-powered insights for enterprise clients.</p>
+                    <h3>Fraud Transaction Detection System</h3>
+                    <p>Engineered a real-time fraud detection backend leveraging Spring Boot microservices and Kafka-based event-driven architecture. Developed and secured REST APIs using JWT authentication and role-based access control. Achieved 99.9% uptime through microservice fault isolation and Kubernetes scaling strategies.</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">D3.js</span>
-                        <span class="tag">WebGL</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">💎</div>
-                        <div class="project-link">↗</div>
+                        <div class="project-icon">🖼️</div>
                     </div>
-                    <h3>Stellar Commerce</h3>
-                    <p>An immersive e-commerce experience featuring 3D product previews and seamless checkout flow.</p>
+                    <h3>ULTIMO Tool</h3>
+                    <p>Designed and implemented an image-annotation platform using ReactJS (Konva.js) and Django, supporting metadata management and version tracking. Delivered a responsive and interactive UI enabling image zoom, drag, and annotation history management, enhancing usability and team collaboration.</p>
                     <div class="project-tags">
-                        <span class="tag">Three.js</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Stripe</span>
-                        <span class="tag">Framer Motion</span>
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">Konva.js</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">REST API</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🎨</div>
-                        <div class="project-link">↗</div>
+                        <div class="project-icon">🤖</div>
                     </div>
-                    <h3>Design System Pro</h3>
-                    <p>A comprehensive design system with 200+ components, built for scale and consistency across products.</p>
+                    <h3>Copilot for MBSE</h3>
+                    <p>Built a Generative AI-powered copilot to automate SysML model creation within Cameo Systems Modeler. Developed LangChain-based APIs to integrate LLMs and process engineering workflows. Transformed and integrated AI-generated responses to support accurate SysML diagram generation.</p>
                     <div class="project-tags">
-                        <span class="tag">Figma</span>
-                        <span class="tag">Storybook</span>
-                        <span class="tag">CSS-in-JS</span>
-                        <span class="tag">Accessibility</span>
+                        <span class="tag">Generative AI</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">LLM</span>
+                        <span class="tag">SysML</span>
+                        <span class="tag">Python</span>
                     </div>
                 </div>
             </div>
@@ -815,7 +850,7 @@
                 <a href="#" onclick="return false;">✉</a>
             </div>
             <div class="footer-content">
-                <p>© 2024 Your Name. Designed & Built with passion.</p>
+                <p>© 2024 Shashwat Ojha. Designed & Built with passion.</p>
             </div>
         </footer>
     </div>
